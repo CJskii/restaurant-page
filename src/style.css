@@ -1,0 +1,119 @@
+:root{
+    box-sizing: border-box;
+    font-size: 48px;
+}
+
+@font-face {
+    font-family: 'MyFont';
+    /*src: url('./my-font.woff2') format('woff2'),
+      url('./my-font.woff') format('woff');*/
+    font-weight: 600;
+    font-style: normal;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.hello{
+    color: red;
+}
+
+html{
+    min-width: 100vw;
+    min-height: 100vh;
+    /*overflow: hidden;*/
+}
+
+body{
+    width: 100%;
+    height: 100%;
+}
+
+.content{ 
+    height: 100vh;
+    background-color: rgb(44, 26, 5);
+    background: url('./assets/background.gif');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: .5rem;
+}
+
+h1,h2,h3,h4,h5,h6{
+    color: white;
+}
+
+.nav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1rem
+}
+
+.nav>button{
+    width: 10rem;
+    font-size: .8rem;
+    background-color: rgba(255, 166, 0, 0.705);
+    border-radius: 10px;
+    color: whitesmoke;
+    border: 1px solid rgba(255, 166, 0, 0.205);
+}
+
+
+
+.main{
+    width: 60%;
+    height: 70%;
+    text-align: center;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.nav>button, .main{
+    background: rgba(26, 29, 27, 0.7);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 10px );
+    border-radius: 10px;
+}
+
+.main>h4{
+    padding-top: .5rem;
+    font-style: italic;
+}
+
+.main>p{
+    font-size: .5rem;
+    padding: 1rem;
+    color: white;
+}
+
+.home-img{
+    width: 400px;
+    height: 400px;
+}
+
+.title{
+    color: orange;
+    font-style: italic;
+}
+
+/* Hover */
+
+.nav>button:hover{
+    background: rgba(26, 29, 27, 1);
+    border: 1px solid rgba(255, 166, 0, 0.5);
+    box-shadow: 0 24px 32px 0 rgba( 31, 38, 135, 0.5 );
+}
