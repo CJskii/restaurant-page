@@ -1,47 +1,17 @@
 import _ from "lodash";
 import './style.css';
-import background from './assets/background.gif';
+import Home from "./home";
+import component from "./header"
 
-function component() {
-    const mainWrapper = document.querySelector('.content')
-    mainWrapper.appendChild(Header())
-    mainWrapper.appendChild(Nav())
-    return mainWrapper;
-  }
-  
-function Header(){
-    const header = document.createElement('div')
-    header.appendChild(Title())
-    header.classList.add('header')
-    return header
-}
+document.addEventListener('DOMContentLoaded', function(){
+    let content = document.querySelector('.content')
+    content.appendChild(component());
+})
 
-function Title(){
-    const h1 = document.createElement('h1')
-    const spanOrange = document.createElement('span') 
-    const span = document.createElement('span')
-    spanOrange.classList.add('title')   
-    spanOrange.textContent = "Hash"
-    span.textContent = " bakery"
-    h1.appendChild(spanOrange)
-    h1.appendChild(span)
+document.addEventListener('DOMContentLoaded', function(){
+    let content = document.querySelector('.content')
+    content.appendChild(Home());
+})
 
-    return h1
-}
 
-function Nav(){
-    const nav = document.createElement('div')
-    nav.classList.add('nav')
-    const homeBtn = document.createElement('button')
-    const menuBtn = document.createElement('button')
-    const aboutBtn = document.createElement('button')
-    homeBtn.textContent = "Home"
-    menuBtn.textContent = "Menu"
-    aboutBtn.textContent = "About"
-    nav.appendChild(homeBtn)
-    nav.appendChild(menuBtn)
-    nav.appendChild(aboutBtn)
-    return nav
-}
 
-  document.body.appendChild(component());
