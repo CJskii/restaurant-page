@@ -1,8 +1,8 @@
+
 export default function component() {
     const mainWrapper = document.querySelector('.content')
     mainWrapper.appendChild(Header())
     mainWrapper.appendChild(Nav())
-    mainWrapper.appendChild(Home())
     return mainWrapper;
   }
   
