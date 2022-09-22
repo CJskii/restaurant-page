@@ -16,10 +16,6 @@
     margin: 0;
 }
 
-.hello{
-    color: red;
-}
-
 html{
     min-width: 100vw;
     min-height: 100vh;
@@ -72,16 +68,26 @@ h1,h2,h3,h4,h5,h6{
     border: 1px solid rgba(255, 166, 0, 0.205);
 }
 
-
-
-.main{
+.main, .main-menu, .main-about{
     width: 60%;
     height: 70%;
     text-align: center;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
-.nav>button, .main{
+.main-menu{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    font-size: .6rem;
+}
+
+.main-about{
+    display: grid;
+    grid-template-rows: .2fr 2fr 1fr;
+}
+
+.nav>button, .main, .main-menu, .main-about{
     background: rgba(26, 29, 27, 0.7);
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 10px );
@@ -89,25 +95,57 @@ h1,h2,h3,h4,h5,h6{
     border-radius: 10px;
 }
 
-.main>h4{
+.main>h4, .main-about>h4{
     padding-top: .5rem;
     font-style: italic;
 }
 
-.main>p{
+.main>p, .main-about>p{
     font-size: .5rem;
     padding: 1rem;
     color: white;
+    justify-self: center;
+    align-self: center;
 }
 
 .home-img{
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
+}
+
+.menu-img{
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
 }
 
 .title{
     color: orange;
     font-style: italic;
+}
+
+.contact{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white
+}
+
+/* Card */
+
+.card{
+    justify-self: center;
+    align-self: center;
+    padding: .2rem
+}
+
+.card-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
 
 /* Hover */
