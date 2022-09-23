@@ -116,12 +116,14 @@ h1,h2,h3,h4,h5,h6{
 .home-img{
     width: 300px;
     height: 300px;
+    margin-top: 1rem;
 }
 
 .menu-img{
     width: 200px;
     height: 200px;
     border-radius: 5px;
+    transition: ease-in .2s;
 }
 
 .title{
@@ -143,7 +145,13 @@ h1,h2,h3,h4,h5,h6{
 .card{
     justify-self: center;
     align-self: center;
-    padding: .2rem
+    padding: .3rem;
+    background: rgba(26, 29, 27, 0.7);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 10px );
+    border-radius: 10px;
+    transition: ease-in .2s;
 }
 
 .card-footer{
@@ -154,10 +162,39 @@ h1,h2,h3,h4,h5,h6{
     color: white;
 }
 
+.card-footer>p{
+    font-size: .5rem;
+}
+
+.card-footer>span{
+    font-size: .5rem;
+}
+
 /* Hover */
 
 .nav>button:hover{
     background: rgba(26, 29, 27, 1);
     border: 1px solid rgba(255, 166, 0, 0.5);
     box-shadow: 0 24px 32px 0 rgba( 31, 38, 135, 0.5 );
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+
+.menu-img:hover{
+    transform: scale(1.02);
+}
+
+.contact>p:hover, .contact>span:hover{
+    color:orange;
+    cursor: pointer;
+    transform: scale(1.07);
+    letter-spacing: 1px;
+    transition: ease-in-out .3s;
+}
+
+.home-img:hover{
+    transform: scale(1.2);
+    transition: ease-in-out .5s;
 }
