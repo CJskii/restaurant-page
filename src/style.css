@@ -198,3 +198,138 @@ h1,h2,h3,h4,h5,h6{
     transform: scale(1.2);
     transition: ease-in-out .5s;
 }
+
+
+/* Media query */ 
+
+@media(max-width:1440px){
+    .nav{
+        width: 90%;
+    }
+    .main, .main-about, .main-menu{
+        width: 80%;
+    }
+    .home-img{
+        width: 400px;
+        height: 400px;
+    }
+}
+
+@media(max-width: 1024px){
+    .home-img{
+        width: 300px;
+        height: 300px;
+        margin-top: 0;
+    }
+    .main-about>p{
+        font-size: .4rem;
+        width: 90%;
+    }
+    .contact{
+        font-size: .9rem;
+    }
+    .main-menu, .main, .main-about{
+        width: 95%;
+    }
+    .menu-img{
+        width: 150px;
+        height: 150px;
+    } 
+}
+
+@media(max-width: 768px){
+    .home-img{
+        width: 250px;
+        height: 250px;
+        margin-top: 0;
+    }
+    .main-menu, .main, .main-about{
+        width: 95%;
+    }
+    .main-about>p{
+        padding: .3rem 0;
+        width: 90%;
+    }
+    .contact{
+        font-size: .7rem;
+    }
+    .menu-img{
+        width: 150px;
+        height: 150px;
+    } 
+    
+}
+
+
+@media(max-width: 425px){
+    h1{
+        font-size: 1.3rem;
+    }
+    .home-img{
+        width: 150px;
+        height: 150px;
+    }
+    .menu-img{
+        width: 170px;
+        height: 170px;
+    }
+    .main-menu{
+        grid-template-columns: 1fr;
+        row-gap: .8rem;
+        overflow: hidden;
+        padding: .2rem 0;
+    }
+    .content{
+        width: 100%;
+        overflow: hidden;
+    }
+    button{
+        padding: 0 .2rem;
+    }
+    .nav{
+        gap: 15px;
+    }
+    .main-about>p{
+        font-size: .4rem;
+        line-height: normal;
+    }
+    .contact{
+        font-size: .5rem;
+        padding-top: .2rem;
+    }
+    
+}
+
+@media(max-width: 375px){
+    .main-about>p{
+        font-size: .3rem;
+        line-height: 25px;
+    }
+    .nav{
+        gap: 5px;
+    }
+    .main>p{
+        font-size: .4rem;
+    }
+}
+
+@media(max-width: 320px){
+    .main-about>p{
+        font-size: .3rem;
+        line-height: 25px;
+    }
+    .nav{
+        gap: 5px;
+        font-size: .2rem;
+        flex-wrap: wrap;
+    }
+    .main>p{
+        font-size: .4rem;
+    }
+    h1{
+        font-size: .8rem;
+    }
+    .main{
+        margin-bottom: .1rem;
+    }
+}
