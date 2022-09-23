@@ -93,7 +93,7 @@ function item3(){
 
 function image3(){
     const img = document.createElement('img')
-    img.src = ethcake
+    img.src = btccake
     img.classList.add('menu-img')
     return img
 }
@@ -104,7 +104,7 @@ function paragraph3(){
     const p = document.createElement('p')
     const price = document.createElement('span')
     p.textContent = "ETH birthday cake"
-    price.textContent = "79.99$"
+    price.textContent = "99.99$"
     text.appendChild(p)
     text.appendChild(price)
     return text
@@ -125,7 +125,7 @@ function item4(){
 
 function image4(){
     const img = document.createElement('img')
-    img.src = btccake
+    img.src = ethcake
     img.classList.add('menu-img')
     return img
 }
@@ -136,7 +136,7 @@ function paragraph4(){
     const p = document.createElement('p')
     const price = document.createElement('span')
     p.textContent = "BTC birthday cake"
-    price.textContent = "99.99$"
+    price.textContent = "79.99$"
     text.appendChild(p)
     text.appendChild(price)
     return text
@@ -189,7 +189,7 @@ function item6(){
 
 function image6(){
     const img = document.createElement('img')
-    img.src = btccake
+    img.src = ethcake
     img.classList.add('menu-img')
     return img
 }
@@ -200,7 +200,7 @@ function paragraph6(){
     const p = document.createElement('p')
     const price = document.createElement('span')
     p.textContent = "BTC birthday cake"
-    price.textContent = "99.99$"
+    price.textContent = "79.99$"
     text.appendChild(p)
     text.appendChild(price)
     return text

@@ -18,7 +18,7 @@ function Title(){
     const spanColor = document.createElement('span') 
     const span = document.createElement('span')
     spanColor.classList.add('title')   
-    spanColor.textContent = "Hash"
+    spanColor.textContent = "#Hash"
     span.textContent = " bakery"
     h1.appendChild(spanColor)
     h1.appendChild(span)
